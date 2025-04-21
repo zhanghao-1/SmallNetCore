@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AlipayServices\" />
-    <Folder Include="TencentServices\" />
+    <Compile Remove="AlipayServices\**" />
+    <Compile Remove="TencentServices\**" />
+    <EmbeddedResource Remove="AlipayServices\**" />
+    <EmbeddedResource Remove="TencentServices\**" />
+    <None Remove="AlipayServices\**" />
+    <None Remove="TencentServices\**" />
   </ItemGroup>
 
   <ItemGroup>
