@@ -26,8 +26,8 @@ namespace SmallNetCore.Services.WorkerServices
         /// <returns>Worker ID</returns>
         public BaseResponse<int> AddWorker(Worker worker)
         {
-            if (worker.CreatedAt == null)
-                worker.CreatedAt = DateTime.Now;
+            if (worker.created_at == null)
+                worker.created_at = DateTime.Now;
                 
             var result = _workerRepository.InsertReturnIdentity(worker);
             return GetOK(result);
