@@ -19,10 +19,12 @@ builder.Services.AddControllers(o =>
 });
 
 //swagger文档
-if (EnvironmentExt.IsTestEnv())
-{
-    builder.Services.AddSwaggerSetup();
-}
+//if (EnvironmentExt.IsTestEnv())
+//{
+//    builder.Services.AddSwaggerSetup();
+//}
+
+builder.Services.AddSwaggerSetup();
 
 //读取配置文件
 builder.Services.AddSingleton(new AppsettingHelper(builder.Configuration));
@@ -57,15 +59,22 @@ var app = builder.Build();
 #region 启用中间件相关
 
 //swagger文档
-if (EnvironmentExt.IsTestEnv())
+//if (EnvironmentExt.IsTestEnv())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI(c =>
+//    {
+//        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+//        c.RoutePrefix = string.Empty;
+//    });
+//}
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-        c.RoutePrefix = string.Empty;
-    });
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Bookkeeping_V1");
+    c.RoutePrefix = string.Empty;
+});
 
 // 启用路由
 app.UseRouting();
