@@ -8,6 +8,18 @@ using SmallNetCore.Models.Base.Helper;
 var builder = WebApplication.CreateBuilder(args);
 
 #region 添加服务
+// 添加 CORS 服务
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
+
 
 builder.Services.AddControllers(o =>
 {
