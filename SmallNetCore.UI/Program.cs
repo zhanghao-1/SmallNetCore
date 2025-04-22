@@ -81,6 +81,8 @@ var app = builder.Build();
 //    });
 //}
 
+// 必须在这里启用 CORS！
+app.UseCors("AllowAll");
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
