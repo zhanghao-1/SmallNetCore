@@ -66,7 +66,9 @@ namespace SmallNetCore.Services.TransactionServices
         public BaseResponse<Transaction> GetTransaction(int id)
         {
             var transaction = _transactionRepository.GetById(id);
+
             return GetOK(transaction);
+
         }
 
         /// <summary>
