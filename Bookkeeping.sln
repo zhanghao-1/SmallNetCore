@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookkeeping.UI", "SmallNetCore.UI\Bookkeeping.UI.csproj", "{C3D53E9C-7BB6-4CFB-AFB4-C7CF11F9AD2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bookkeeping.UI", "Bookkeeping.UI\Bookkeeping.UI.csproj", "{C3D53E9C-7BB6-4CFB-AFB4-C7CF11F9AD2D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmallNetCore.Models", "SmallNetCore.Models\SmallNetCore.Models.csproj", "{38535FAE-934E-455F-ABE0-F94FC8A6F3BA}"
 EndProject
