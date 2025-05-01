@@ -77,6 +77,7 @@ namespace SmallNetCore.Services.TransactionServices
         {
             var transactions = _transactionRepository.GetList();
             return GetOK(transactions);
+
         }
         
         /// <summary>
