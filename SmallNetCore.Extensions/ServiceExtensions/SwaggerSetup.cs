@@ -21,7 +21,7 @@ namespace SmallNetCore.Extensions.ServiceExtensions
                 });
 
                 var strPath = Directory.GetCurrentDirectory();
-                var file = Path.Combine(AppContext.BaseDirectory, "SmallNetCore.UI.xml");  // xml文档绝对路径
+                var file = Path.Combine(AppContext.BaseDirectory, "Bookkeeping.UI.xml");  // xml文档绝对路径
                 var file2 = Path.Combine(AppContext.BaseDirectory, "SmallNetCore.Models.xml");  // xml文档绝对路径
                 c.IncludeXmlComments(file, true); // true : 显示控制器层注释
                 c.IncludeXmlComments(file2);
