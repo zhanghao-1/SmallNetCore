@@ -30,6 +30,7 @@ namespace SmallNetCore.UI.Controllers
             return _transactionService.AddTransaction(transaction);
         }
 
+
         /// <summary>
         /// Update transaction information
         /// </summary>
