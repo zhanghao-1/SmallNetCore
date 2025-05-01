@@ -18,6 +18,7 @@ namespace SmallNetCore.UI.Controllers
             _transactionService = transactionService;
         }
 
+
         /// <summary>
         /// Add a new transaction
         /// </summary>
